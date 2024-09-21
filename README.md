@@ -22,3 +22,12 @@ pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs
  - Change the 'data_path' attribute in the 'configs/config_setting' file to yourselfs.
 ## 2. Prepare the pre_trained weights
 The weights of the pre-trained VMamba could be downloaded [here](https://github.com/MzeroMiko/VMamba).
+## 3. Train the VM-UNet
+```
+python train_synapse.py  # Train and test RSVM-UNet on the Synapse dataset.
+or
+python train.py  # Train and test VM-UNet on the Polyp datasets.
+```
+## 5. Acknowledgments
+- We thank the authors of [VM-UNet](https://github.com/JCruan519/VM-UNet) and [Swin-UNet](https://github.com/HuCaoFighting/Swin-Unet) for their open-source codes.
+
